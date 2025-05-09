@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1></h1>
+    <div class="container py-5">
+        <h1 class="text-center mb-4"> <i class="bi bi-file-earmark-text"></i> To-Do-List </h1>
+        <input type="text" id="taskinput" placeholder="Enter your task">
+        <button type="submit" id="addtaskbtn"> <i class="bi bi-cart"></i> Add</button>
+        <ul id="tasklist"></ul>
+        <div >
+            <button id="filterall"> <i class="bi bi-emoji-frown"></i> All</button>
+            <button id="filtercompleted"><i class="bi bi-emoji-sunglasses"></i>Completed</button>
+            <button id="filterpending"> <i class="bi bi-emoji-neutral"></i> Pending</button>
+        </div>   
+
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
